@@ -16,24 +16,27 @@
 
 
 <meta name="description" content="搭建服务器
-搭建node运行环境
+搭建服务器运行环境
 因为讲的是nodejs搭建的服务器，所以电脑中必须安装node，我本人使用的是window系统，所以以下的方法都是基于window的系统，大家可以到这个网址找到自己电脑对应的系统直接下载安装 下载地址，不在赘述。
-安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。">
+安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。
+n">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于node.js的简单服务器搭建(实现简单的登录注册)">
 <meta property="og:url" content="http://yoursite.com/2017/01/08/server/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="搭建服务器
-搭建node运行环境
+搭建服务器运行环境
 因为讲的是nodejs搭建的服务器，所以电脑中必须安装node，我本人使用的是window系统，所以以下的方法都是基于window的系统，大家可以到这个网址找到自己电脑对应的系统直接下载安装 下载地址，不在赘述。
-安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。">
-<meta property="og:updated_time" content="2017-01-08T13:12:23.161Z">
+安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。
+n">
+<meta property="og:updated_time" content="2017-01-08T13:14:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于node.js的简单服务器搭建(实现简单的登录注册)">
 <meta name="twitter:description" content="搭建服务器
-搭建node运行环境
+搭建服务器运行环境
 因为讲的是nodejs搭建的服务器，所以电脑中必须安装node，我本人使用的是window系统，所以以下的方法都是基于window的系统，大家可以到这个网址找到自己电脑对应的系统直接下载安装 下载地址，不在赘述。
-安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。">
+安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。
+n">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -306,7 +309,7 @@
       
           
         <h2 id="搭建服务器"><a href="#搭建服务器" class="headerlink" title="搭建服务器"></a>搭建服务器</h2><hr>
-<h4 id="搭建node运行环境"><a href="#搭建node运行环境" class="headerlink" title="搭建node运行环境"></a>搭建node运行环境</h4><ul>
+<h4 id="搭建服务器运行环境"><a href="#搭建服务器运行环境" class="headerlink" title="搭建服务器运行环境"></a>搭建服务器运行环境</h4><ul>
 <li>因为讲的是nodejs搭建的服务器，所以电脑中必须安装node，我本人使用的是window系统，所以以下的方法都是基于window的系统，大家可以到这个网址找到自己电脑对应的系统直接下载安装 <a href="https://nodejs.org/en/download/" target="_blank" rel="external">下载地址</a>，不在赘述。</li>
 <li>安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。</li>
 <li>node安装的时候也安装了npm模块，我们可以基于这个插件安装我们所需的模块</li>
@@ -341,7 +344,7 @@
         <p><span>Title:</span><a href="/2017/01/08/server/">基于node.js的简单服务器搭建(实现简单的登录注册)</a></p>
         <p><span>Author:</span><a href="/" title="Back to Homepage">前端小武</a></p>
         <p><span>Created:</span>2017-01-08, 17:28:15</p>
-        <p><span>Updated:</span>2017-01-08, 21:12:23</p>
+        <p><span>Updated:</span>2017-01-08, 21:14:05</p>
         <p>
             <span>Full URL:</span><a class="post-url" href="/2017/01/08/server/" title="基于node.js的简单服务器搭建(实现简单的登录注册)">http://yoursite.com/2017/01/08/server/</a>
             <span class="copy-path" data-clipboard-text="From http://yoursite.com/2017/01/08/server/　　By 前端小武" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
@@ -371,7 +374,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建服务器"><span class="toc-number">1.</span> <span class="toc-text">搭建服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#搭建node运行环境"><span class="toc-number">1.0.1.</span> <span class="toc-text">搭建node运行环境</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#配置服务器实现注册"><span class="toc-number">1.0.2.</span> <span class="toc-text">配置服务器实现注册</span></a></li></ol></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建服务器"><span class="toc-number">1.</span> <span class="toc-text">搭建服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#搭建服务器运行环境"><span class="toc-number">1.0.1.</span> <span class="toc-text">搭建服务器运行环境</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#配置服务器实现注册"><span class="toc-number">1.0.2.</span> <span class="toc-text">配置服务器实现注册</span></a></li></ol></li></ol></li></ol>
         
     </div>
     <style>
