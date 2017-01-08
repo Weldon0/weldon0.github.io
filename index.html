@@ -137,13 +137,13 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>Menu</li>
-                        <li>Tags</li>
+                        <li>菜单</li>
+                        <li>标签</li>
                         
-                        <li>Friends</li>
+                        <li>友情链接</li>
                         
                         
-                        <li>About Me</li>
+                        <li>关于我</li>
                         
                     </ul>
                 </div>
@@ -182,7 +182,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/jQuery/">jQuery</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/jQuery/">jQuery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/">node.js</a></li></ul>
                     </div>
                 </section>
                 
@@ -255,9 +255,128 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-server" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/01/08/server/" class="article-date">
+      <time datetime="2017-01-08T09:28:15.000Z" itemprop="datePublished">2017-01-08</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/01/08/server/">基于node.js的简单服务器搭建(实现简单的登录注册)</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="一、搭建服务器"><a href="#一、搭建服务器" class="headerlink" title="一、搭建服务器"></a>一、搭建服务器</h2><h3 id="搭建node运行环境"><a href="#搭建node运行环境" class="headerlink" title="搭建node运行环境"></a>搭建node运行环境</h3><ul>
+<li>因为讲的是nodejs搭建的服务器，所以电脑中必须安装node，我本人使用的是window系统，所以以下的方法都是基于window的系统，大家可以到这个网址找到自己电脑对应的系统直接下载安装 <a href="https://nodejs.org/en/download/" target="_blank" rel="external">下载地址</a>，不在赘述。</li>
+<li>安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。<h4 id="node安装的时候也安装了npm模块，我们可以基于这个插件安装我们所需的模块"><a href="#node安装的时候也安装了npm模块，我们可以基于这个插件安装我们所需的模块" class="headerlink" title="node安装的时候也安装了npm模块，我们可以基于这个插件安装我们所需的模块"></a>node安装的时候也安装了npm模块，我们可以基于这个插件安装我们所需的模块</h4></li>
+<li><p>初始化package.json文件,并创建我们服务器文件的目录，我创建的是server，然后在server文件夹下在命令行工具中进行安装模块（Git比window自带的命令行工具好用，最好去用Git，我在用window自带命令行工具的时候出现了很多莫名其妙的BUG）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">npm init                                        //(回车执行)会在目录下初始化一个package.json文件，包含了我们服务器所依赖的模块信息还有一些配置信息都在里面，生成的时候我们也可以去修改</div><div class="line">name: (server)                               //这是搭建服务器的名字，可以自己定义，但是name值不能有大写</div><div class="line">version: (1.0.0)                                //版本 可以自己指定</div><div class="line">description:</div><div class="line">entry point: (index.js)                         //含有服务器代码的文件</div><div class="line"><span class="built_in">test</span> <span class="built_in">command</span>:</div><div class="line">git repository:</div><div class="line">keywords:</div><div class="line">author:</div><div class="line">license: (ISC)</div><div class="line">About to write to H:\server\package.json:       //package.json文件的路径</div><div class="line"></div><div class="line">&#123;</div><div class="line"><span class="string">"name"</span>: <span class="string">"bolgexerc"</span>,</div><div class="line"><span class="string">"version"</span>: <span class="string">"1.0.0"</span>,</div><div class="line"><span class="string">"description"</span>: <span class="string">""</span>,</div><div class="line"><span class="string">"main"</span>: <span class="string">"index.js"</span>,</div><div class="line"><span class="string">"scripts"</span>: &#123;</div><div class="line">    <span class="string">"test"</span>: <span class="string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span></div><div class="line">&#125;,</div><div class="line"><span class="string">"author"</span>: <span class="string">""</span>,</div><div class="line"><span class="string">"license"</span>: <span class="string">"ISC"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>基本配置这几项就已经可以了，这时大家可以发现我们的server目录下已经有了一个package.json的文件，这个文件就是我们刚才npm init生成的文件</p>
+</li>
+<li><p>安装express模块：这个模块已经封装了创建服务器的方法，我们可以直接基于这个模块去创建服务器，不用我们再去写很多繁琐的代码，直接引入这个模块就可以</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install express --save</div></pre></td></tr></table></figure>
+</li>
+<li><p>执行上面这些简单的命令，我们已经具备了搭建服务器的条件，现在就就要创建我们的服务器代码，在服务器文件夹下创建index.js文件:</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install express --save</div></pre></td></tr></table></figure>
+<hr>
+<p>待续。。。。。。。。。。。。。。。。。。。。</p>
+</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node-js/">node.js</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-js" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/01/01/js/" class="article-date">
+      <time datetime="2017-01-01T11:04:33.670Z" itemprop="datePublished">2017-01-01</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-Hello-World-0" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -393,14 +512,14 @@
                 2016-2017 前端小武
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
@@ -409,7 +528,7 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -442,9 +561,9 @@
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window
