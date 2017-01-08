@@ -27,7 +27,7 @@
 搭建node运行环境
 因为讲的是nodejs搭建的服务器，所以电脑中必须安装node，我本人使用的是window系统，所以以下的方法都是基于window的系统，大家可以到这个网址找到自己电脑对应的系统直接下载安装 下载地址，不在赘述。
 安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。">
-<meta property="og:updated_time" content="2017-01-08T12:11:10.723Z">
+<meta property="og:updated_time" content="2017-01-08T12:28:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于node.js的简单服务器搭建(实现简单的登录注册)">
 <meta name="twitter:description" content="搭建服务器
@@ -317,12 +317,17 @@
 <li><p>安装express模块：这个模块已经封装了创建服务器的方法，我们可以直接基于这个模块去创建服务器，不用我们再去写很多繁琐的代码，直接引入这个模块就可以</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install express --save</div></pre></td></tr></table></figure>
 </li>
-<li><p>执行上面这些简单的命令，我们已经具备了搭建服务器的条件，现在就就要创建我们的服务器代码，在服务器文件夹下创建index.js文件:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">const express = require(<span class="string">'express'</span>);                 //引入模块</div><div class="line">const app     = express();                              //执行模块的方法</div><div class="line"></div><div class="line">app.lisetn(<span class="string">'3000'</span>,()=&gt;                              //监听3000端口</div><div class="line">&#123;</div><div class="line">    console.log(<span class="string">'server running at 3000'</span>);          //3000端口有请求控制台输出文字</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<p>我们可以在浏览器中输入:127.0.0.1:3000     如果命令行成功输出文字说明我们的服务器已经搭建成功</p>
-</li>
+<li><p>执行上面这些简单的命令，我们已经具备了搭建服务器的条件，现在就就要创建我们的服务器代码，在服务器文件夹下创建index.js文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">//server/index.js</div><div class="line">   const express = require(<span class="string">'express'</span>);                 //引入模块</div><div class="line">   const app     = express();                              //执行模块的方法</div><div class="line"></div><div class="line">   app.lisetn(<span class="string">'3000'</span>,()=&gt;                              //监听3000端口</div><div class="line">   &#123;</div><div class="line">       console.log(<span class="string">'server running at 3000'</span>);          //3000端口有请求控制台输出文字</div><div class="line">   &#125;)</div></pre></td></tr></table></figure>
+<pre><code>我们可以在浏览器中输入:127.0.0.1:3000     如果命令行成功输出文字说明我们的服务器已经搭建成功
+</code></pre></li>
 </ul>
-<h4 id="配置服务器"><a href="#配置服务器" class="headerlink" title="配置服务器"></a>配置服务器</h4>
+<h4 id="配置服务器"><a href="#配置服务器" class="headerlink" title="配置服务器"></a>配置服务器</h4><ul>
+<li><p>我们的服务器是需要打开页面的，所以现在我们就给服务器配置一个可以打开的静态页面，我们可以在server文件夹下再创建一个www文件夹，文件夹名字自己定义，<br>配置的时候保持统一即可，在www文件下创建index.html文件,并写在页面中写简单的内容，方便我们观察效果</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;!--server/www/index.html--&gt;</div><div class="line">    &lt;!DOCTYPE html&gt;</div><div class="line">    &lt;html lang=<span class="string">"zh-CN"</span>&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</div><div class="line">        &lt;title&gt;登录&lt;/title&gt;</div><div class="line">    &lt;/head&gt;</div><div class="line">    &lt;body&gt;</div><div class="line">        &lt;p&gt;服务器已经打开了静态页面。。。。&lt;/p&gt;</div><div class="line">    &lt;/body&gt;</div><div class="line">    &lt;/html&gt;</div></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">//server/index.js</div><div class="line">const express = require(<span class="string">'express'</span>);                 //引入模块</div><div class="line">const app     = express();                              //执行模块的方法</div><div class="line"></div><div class="line"></div><div class="line">app.use(express.static(<span class="string">'www'</span>))                      //服务器运行时会运行www下的index.html文件</div><div class="line"></div><div class="line"></div><div class="line">app.lisetn(<span class="string">'3000'</span>,()=&gt;                              //监听3000端口</div><div class="line">&#123;</div><div class="line">    console.log(<span class="string">'server running at 3000'</span>);          //3000端口有请求控制台输出文字</div><div class="line">&#125;)</div></pre></td></tr></table></figure></li>
+</ul>
+
       
     </div>
     
@@ -333,7 +338,7 @@
         <p><span>本文标题:</span><a href="/2017/01/08/server/">基于node.js的简单服务器搭建(实现简单的登录注册)</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">前端小武</a></p>
         <p><span>发布时间:</span>2017-01-08, 17:28:15</p>
-        <p><span>最后更新:</span>2017-01-08, 20:11:10</p>
+        <p><span>最后更新:</span>2017-01-08, 20:28:24</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/01/08/server/" title="基于node.js的简单服务器搭建(实现简单的登录注册)">http://yoursite.com/2017/01/08/server/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/01/08/server/　　作者: 前端小武" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
