@@ -17,20 +17,23 @@
 
 <meta name="description" content="搭建服务器搭建node运行环境
 因为讲的是nodejs搭建的服务器，所以电脑中必须安装node，我本人使用的是window系统，所以以下的方法都是基于window的系统，大家可以到这个网址找到自己电脑对应的系统直接下载安装 下载地址，不在赘述。
-安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。no">
+安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。
+n">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于node.js的简单服务器搭建(实现简单的登录注册)">
 <meta property="og:url" content="http://yoursite.com/2017/01/08/server/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="搭建服务器搭建node运行环境
 因为讲的是nodejs搭建的服务器，所以电脑中必须安装node，我本人使用的是window系统，所以以下的方法都是基于window的系统，大家可以到这个网址找到自己电脑对应的系统直接下载安装 下载地址，不在赘述。
-安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。no">
-<meta property="og:updated_time" content="2017-01-08T11:56:26.000Z">
+安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。
+n">
+<meta property="og:updated_time" content="2017-01-08T11:57:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于node.js的简单服务器搭建(实现简单的登录注册)">
 <meta name="twitter:description" content="搭建服务器搭建node运行环境
 因为讲的是nodejs搭建的服务器，所以电脑中必须安装node，我本人使用的是window系统，所以以下的方法都是基于window的系统，大家可以到这个网址找到自己电脑对应的系统直接下载安装 下载地址，不在赘述。
-安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。no">
+安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。
+n">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -304,7 +307,8 @@
           
         <h2 id="搭建服务器"><a href="#搭建服务器" class="headerlink" title="搭建服务器"></a>搭建服务器</h2><h3 id="搭建node运行环境"><a href="#搭建node运行环境" class="headerlink" title="搭建node运行环境"></a>搭建node运行环境</h3><ul>
 <li>因为讲的是nodejs搭建的服务器，所以电脑中必须安装node，我本人使用的是window系统，所以以下的方法都是基于window的系统，大家可以到这个网址找到自己电脑对应的系统直接下载安装 <a href="https://nodejs.org/en/download/" target="_blank" rel="external">下载地址</a>，不在赘述。</li>
-<li>安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。<h4 id="node安装的时候也安装了npm模块，我们可以基于这个插件安装我们所需的模块"><a href="#node安装的时候也安装了npm模块，我们可以基于这个插件安装我们所需的模块" class="headerlink" title="node安装的时候也安装了npm模块，我们可以基于这个插件安装我们所需的模块"></a>node安装的时候也安装了npm模块，我们可以基于这个插件安装我们所需的模块</h4></li>
+<li>安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。</li>
+<li>node安装的时候也安装了npm模块，我们可以基于这个插件安装我们所需的模块</li>
 <li><p>初始化package.json文件,并创建我们服务器文件的目录，我创建的是server，然后在server文件夹下在命令行工具中进行安装模块（Git比window自带的命令行工具好用，最好去用Git，我在用window自带命令行工具的时候出现了很多莫名其妙的BUG）</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">npm init                                        //(回车执行)会在目录下初始化一个package.json文件，包含了我们服务器所依赖的模块信息还有一些配置信息都在里面，生成的时候我们也可以去修改</div><div class="line">name: (server)                               //这是搭建服务器的名字，可以自己定义，但是name值不能有大写</div><div class="line">version: (1.0.0)                                //版本 可以自己指定</div><div class="line">description:</div><div class="line">entry point: (index.js)                         //含有服务器代码的文件</div><div class="line"><span class="built_in">test</span> <span class="built_in">command</span>:</div><div class="line">git repository:</div><div class="line">keywords:</div><div class="line">author:</div><div class="line">license: (ISC)</div><div class="line">About to write to H:\server\package.json:       //package.json文件的路径</div><div class="line"></div><div class="line">&#123;</div><div class="line"><span class="string">"name"</span>: <span class="string">"bolgexerc"</span>,</div><div class="line"><span class="string">"version"</span>: <span class="string">"1.0.0"</span>,</div><div class="line"><span class="string">"description"</span>: <span class="string">""</span>,</div><div class="line"><span class="string">"main"</span>: <span class="string">"index.js"</span>,</div><div class="line"><span class="string">"scripts"</span>: &#123;</div><div class="line">    <span class="string">"test"</span>: <span class="string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span></div><div class="line">&#125;,</div><div class="line"><span class="string">"author"</span>: <span class="string">""</span>,</div><div class="line"><span class="string">"license"</span>: <span class="string">"ISC"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>基本配置这几项就已经可以了，这时大家可以发现我们的server目录下已经有了一个package.json的文件，这个文件就是我们刚才npm init生成的文件</p>
@@ -329,7 +333,7 @@
         <p><span>本文标题:</span><a href="/2017/01/08/server/">基于node.js的简单服务器搭建(实现简单的登录注册)</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">前端小武</a></p>
         <p><span>发布时间:</span>2017-01-08, 17:28:15</p>
-        <p><span>最后更新:</span>2017-01-08, 19:56:26</p>
+        <p><span>最后更新:</span>2017-01-08, 19:57:59</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/01/08/server/" title="基于node.js的简单服务器搭建(实现简单的登录注册)">http://yoursite.com/2017/01/08/server/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/01/08/server/　　作者: 前端小武" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -359,7 +363,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建服务器"><span class="toc-number">1.</span> <span class="toc-text">搭建服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#搭建node运行环境"><span class="toc-number">1.1.</span> <span class="toc-text">搭建node运行环境</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#node安装的时候也安装了npm模块，我们可以基于这个插件安装我们所需的模块"><span class="toc-number">1.1.1.</span> <span class="toc-text">node安装的时候也安装了npm模块，我们可以基于这个插件安装我们所需的模块</span></a></li></ol></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建服务器"><span class="toc-number">1.</span> <span class="toc-text">搭建服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#搭建node运行环境"><span class="toc-number">1.1.</span> <span class="toc-text">搭建node运行环境</span></a></li></ol></li></ol>
         
     </div>
     <style>
