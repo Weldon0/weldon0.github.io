@@ -1,833 +1,312 @@
-<!DOCTYPE html>
-<html >
+<!DOCTYPE HTML>
+<html class="no-js" lang="zh-CN">
+<!--
+//                            _ooOoo_
+//                           o8888888o
+//                           88" . "88
+//                           (| -_- |)
+//                            O\ = /O
+//                        ____/`---'\____
+//                      .   ' \\| |// `.
+//                       / \\||| : |||// \
+//                     / _||||| -:- |||||- \
+//                       | | \\\ - /// | |
+//                     | \_| ''\---/'' | |
+//                      \ .-\__ `-` ___/-. /
+//                   ___`. .' /--.--\ `. . __
+//                ."" '< `.___\_<|>_/___.' >'"".
+//               | | : `- \`.;`\ _ /`;.`/ - ` : | |
+//                 \ \ `-. \_ __\ /__ _/ .-` / /
+//         ======`-.____`-.___\_____/___.-`____.-'======
+//                            `=---='
+//                 拦截插件累计拦截逗比攻击"1381438"次！
+//         .............................................
+//                  佛祖保佑             永无BUG
+//          佛曰:
+//                  写字楼里写字间，写字间里程序员；
+//                  程序人员写程序，又拿程序换酒钱。
+//                  酒醒只在网上坐，酒醉还来网下眠；
+//                  酒醉酒醒日复日，网上网下年复年。
+//                  但愿老死电脑间，不愿鞠躬老板前；
+//                  奔驰宝马贵者趣，公交自行程序员。
+//                  别人笑我忒疯癫，我笑自己命太贱；
+//                  不见满街漂亮妹，哪个归得程序员？
+-->
 <head>
-
-    <!--[if lt IE 9]>
-        <style>body {display: none; background: none !important} </style>
-        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
-    <![endif]-->
-
+    <!--[if lte IE 9]>
+<meta http-equiv="refresh" content="0;url=http://yoursite.com/warn.html"><![endif]-->
+<!--[if lt IE 9]>
+<script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
+<script src="//cdnjscn.b0.upaiyun.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<script src="/js/SimpleCore.js"></script>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="format-detection" content="telephone=no" />
-<meta name="author" content="前端小武" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta http-equiv="mobile-agent" content="format=html5; url=http://yoursite.com">
+<meta name="author" content="前端小武">
+<link rel="stylesheet" media="all" href="/css/SimpleStyle.css">
+
+<link rel="shortcut icon" href="/images/favicon.png">
 
 
-    
-    
+<title>Hexo - null</title>
 
+<meta name="keywords" content="undefined">
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-
-<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
-
-
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-
-
-
-    <link rel="shortcut icon" href="/favicon.png">
-
-
-
-    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
-
-
-
-    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
-
-
-
-    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/style.css">
-
-
-    <style> .article { opacity: 0;} </style>
-
-
-<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
-
-<title>Hexo</title>
-
-<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-
-<script>
-    var yiliaConfig = {
-        fancybox: true,
-        animate: true,
-        isHome: true,
-        isPost: false,
-        isArchive: false,
-        isTag: false,
-        isCategory: false,
-        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
-        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: undefined
-    }
-</script>
-
-
-    <script> yiliaConfig.jquery_ui = [false]; </script>
-
-
-
-    <script> yiliaConfig.rootUrl = "\/";</script>
-
-
-
-
-
-
+<meta name="description " content="null">
 </head>
 <body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-    <header id="header" class="inner">
-        <a href="/" class="profilepic">
-            <img src="http://weldon.oss-cn-shanghai.aliyuncs.com/IMG/author.jpg" class="animated zoomIn">
-        </a>
-        <hgroup>
-          <h1 class="header-author"><a href="/">前端小武</a></h1>
-        </hgroup>
-
-        
-
-        
-
-
-        
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>Menu</li>
-                        <li>Tags</li>
-                        
-                        <li>Friends</li>
-                        
-                        
-                        <li>About Me</li>
-                        
-                    </ul>
-                </div>
+<div id="nav">
+    <nav class="nav-menu">
+        <a class="site-name current" href="/" title="说IT">说</a>
+        <a class="site-index current" href="/"><i class="fa fa-home"></i><span>首页</span></a>
+        <a href="/archives" title="归档"><i class="fa fa-archives"></i><span>归档</span></a>
+        <a href="/tags" title="标签"><i class="fa fa-tags"></i><span>标签</span></a>
+        <a href="/friendlinks" title="链接"><i class="fa fa-links"></i><span>链接</span></a>
+        <a href="/feedback" title="留言"><i class="fa fa-guestbook"></i><span>留言</span></a>
+        <a href="/about" title="关于"><i class="fa fa-about"></i><span>关于</span></a>
+    </nav>
+</div>
+<div class="nav-user">
+    <a class="btn-search" href="#"><i class="fa fa-search"></i></a>
+    <a class="btn-read-mode" href="#"><i class="fa fa-sun-o"></i></a>
+    <a class="btn-donate" href="javascript:"><i class="fa fa-weixin"></i></a>
+</div>
+<div id="wrapper" class="clearfix">
+    <div id="body">
+        <div class="main" id="main">
+            <div id="cover">
+    <div class="cover-img" style="background-image:url('/images/coverImage.jpg')"></div>
+    <div class="cover-info">
+        <img class="avatar" width="72" src="/images/favicon.png" alt="" />
+        <p>说人文，撸科技</p>
+        <div class="cover-sns">
+            <div class="btn btn-weixin">
+                <a class="" href="javascript:"><i class="fa fa-weixin"></i></a>
+                <div class="qrcode"><img src="/images/weixin-mp.png" alt="weixinQrcode" /></div>
+                <div class="qrcode-arrow"></div>
             </div>
-        
-
-        <div id="switch-area" class="switch-area">
-            <div class="switch-wrap">
-                <section class="switch-part switch-part1">
-                    <nav class="header-menu">
-                        <ul>
-                        
-                            <li><a href="/">主页</a></li>
-                        
-                            <li><a href="/archives/">所有文章</a></li>
-                        
-                            <li><a href="/tags/">标签云</a></li>
-                        
-                            <li><a href="/about/">关于我</a></li>
-                        
-                        </ul>
-                    </nav>
-                    <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa Email" href="mailto:123@123.com" title="Email"></a>
-                            
-                                <a class="fa GitHub" href="https://github.com/Weldon0" title="GitHub"></a>
-                            
-                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
-                            
-                        </ul>
-                    </nav>
-                </section>
-                
-                
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jQuery/">jQuery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node-js/">node.js</a></li></ul>
-                    </div>
-                </section>
-                
-                
-                
-                <section class="switch-part switch-part3">
-                    <div id="js-friends">
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
-                    
-                    </div>
-                </section>
-                
-
-                
-                
-                <section class="switch-part switch-part4">
-                
-                    <div id="js-aboutme">专注于前端</div>
-                </section>
-                
+            <div class="btn btn-weibo">
+                <a href="https://weibo.com/tangkunyin" target="_blank" rel="nofollow"><i class="fa fa-weibo"></i></a>
+            </div>
+            <div class="btn btn-facebook">
+                <a href="https://fackbook.com/tangkunyin"  target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="btn btn-github">
+                <a href="https://github.com/tangkunyin"  target="_blank" rel="nofollow"><i class="fa fa-github"></i></a>
             </div>
         </div>
-    </header>                
-</div>
     </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-      <div class="overlay">
-          <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">前端小武</a></h1>
-      </div>
-    <div class="intrude-less">
-        <header id="header" class="inner">
-            <a href="/" class="profilepic">
-                <img src="http://weldon.oss-cn-shanghai.aliyuncs.com/IMG/author.jpg" class="animated zoomIn">
+</div>
+            <div class="page-title">
+    <ul>
+        <li class="active">
+            <a href="/" data-name="最近文章">最近</a>
+        </li>
+        
+        <li class="">
+            <a href="/categories/tech" data-name="技术">技术</a>
+        </li>
+        
+        <li class="">
+            <a href="/categories/humanity" data-name="人文">人文</a>
+        </li>
+        
+        <li class="">
+            <a href="/categories/resource" data-name="资源">资源</a>
+        </li>
+        
+        <li class="page-search">
+    <form id="search" method="post" action="" role="search">
+        <label for="s" class="sr-only">搜索关键字</label>
+        <input type="text" name="s" class="text" placeholder="输入关键字搜索"/>
+        <button type="submit" class="submit" title="搜索"><i class="fa fa-search"></i></button>
+    </form>
+</li>
+    </ul>
+</div>
+<div class="main-inner">
+    
+    <!-- 首页默认取最最新文章集 -->
+    
+    
+<article class="post">
+    
+    <div class="post-header">
+        <div class="post-meta">
+            <a href="https://www.tangkunyin.com" target="_blank">
+                <strong>undefined</strong>
             </a>
-            <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">前端小武</a></h1>
-            </hgroup>
-            
-            <nav class="header-menu">
-                <ul>
-                
-                    <li><a href="/">主页</a></li>
-                
-                    <li><a href="/archives/">所有文章</a></li>
-                
-                    <li><a href="/tags/">标签云</a></li>
-                
-                    <li><a href="/about/">关于我</a></li>
-                
-                <div class="clearfix"></div>
-                </ul>
-            </nav>
-            <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
-                            
-                                <a class="fa GitHub" target="_blank" href="https://github.com/Weldon0" title="GitHub"></a>
-                            
-                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
-                            
-                        </ul>
-            </nav>
-        </header>                
-    </div>
-    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
-</nav>
-      <div class="body-wrap">
-  
-    <article id="post-git版本管理" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/01/10/git版本管理/" class="article-date">
-      <time datetime="2017-01-10T14:02:15.000Z" itemprop="datePublished">2017-01-10</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/10/git版本管理/">git版本管理</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <hr>
-<h3 id="创建git仓库"><a href="#创建git仓库" class="headerlink" title="创建git仓库"></a>创建git仓库</h3><p>$ git config –global user.name”Weldon”<br>$ git config –global user.email”wxh199311@outlook.com”</p>
-<p>$ git config –global user.name “Your Name”<br>$ git config –global user.email “email@example.com”</p>
-<p>git config命令的–global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。</p>
-<hr>
-<h4 id="提交文件到仓库"><a href="#提交文件到仓库" class="headerlink" title="提交文件到仓库"></a>提交文件到仓库</h4><ul>
-<li>1.创建一个版本的仓库  $ git init</li>
-<li>2.写入文件 提交到仓库  $ git add <file>  （添加到暂存区）<br>*3.提交到版本库  $ git commit -m “提交的描述，做了哪些操作” （把暂存区的文件提交到master分支），这个分支是git自己创建的</file></li>
-</ul>
-<hr>
-<h4 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h4><ul>
-<li><p>$ git log 查看提交日志</p>
-<blockquote>
-<p>  4ae77e214854da0e35b34043663e82737bd6e1ad 第三次修改了内容  前面是提交的ID</p>
-</blockquote>
-</li>
-<li><p>$ git log –pretty=oneline 美化输出信息</p>
-</li>
-<li>$ git reset –hard HEAD^ 回退到上一个版本  ^上一个版本</li>
-<li>$ git reset –hard 4ae7  回退到提交的id是4ae7的文件状态</li>
-<li>$ git reflog 记录了每一次的命令</li>
-</ul>
-<hr>
-<h4 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h4><ul>
-<li>Untracked表示创建了但是没有提交到暂存区的文件的状态 文件从来没有被添加过</li>
-<li>每次修改，如果不add到暂存区，那就不会加入到commit中。</li>
-<li>git diff HEAD –文件名   命令可以查看工作区和版本库里面最新版本的区别：</li>
-</ul>
-<hr>
-<h4 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h4><ul>
-<li>没有提交到暂存区时 用git checkout – file (git checkout .)就可以撤销对工作区的修改<blockquote>
-<p>  git checkout – file命令中的–很重要，没有–，就变成了“切换到另一个分支”的命令<br>  提交到暂存区修改时，可以回到提交到暂存区时的状态</p>
-</blockquote>
-</li>
-<li>提交到暂存区 但是没有到仓库  git reset HEAD file可以把暂存区的修改撤销掉（unstage），重新放回工作区：<blockquote>
-<p>  git reset命令既可以回退版本，也可以把暂存区的修改回退到工作区。当我们用HEAD时，表示最新的版本。</p>
-</blockquote>
-</li>
-<li>场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout – file。</li>
-<li>场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。</li>
-<li>场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。</li>
-</ul>
-<hr>
-<h4 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h4><ul>
-<li>git rm  删除文件，想要找回删除的文件 可以使用git checkout – file</li>
-<li>git rm file 删除版本库文件，删除之后不能找回</li>
-</ul>
-<hr>
-<h4 id="提交文档到github远程仓库"><a href="#提交文档到github远程仓库" class="headerlink" title="提交文档到github远程仓库"></a>提交文档到github远程仓库</h4><ul>
-<li>1.$ ssh-keygen -t rsa -C “youremail@example.com” 获取电脑的SSH key   把id_rsa.pub中的内容提交到github的sshkey里面</li>
-<li>2.在github新建一个项目，本地执行$ git remote add origin git@github.com:name/file.git 和远程仓库进行绑定</li>
-<li>3.本地执行$ git push -u origin master 把本地当前的分支推送到远程仓库 即github上面<blockquote>
-<p>由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。</p>
-</blockquote>
-</li>
-<li>4.从现在起，只要本地作了提交，就可以通过命令：$ git push origin master提交到远程仓库</li>
-</ul>
-<hr>
-<h4 id="远程仓库克隆"><a href="#远程仓库克隆" class="headerlink" title="远程仓库克隆"></a>远程仓库克隆</h4><ul>
-<li>1.$ git clone git@github.com:name/filesrc.git 本地执行命令可以克隆代码<blockquote>
-<p>  还可以用<a href="https://github.com/michaelliao/gitskills.git" target="_blank" rel="external">https://github.com/michaelliao/gitskills.git</a></p>
-</blockquote>
-</li>
-<li><ol>
-<li>提交操作和上面相同，默认就把本地仓库绑定了github的远程仓库</li>
-</ol>
-</li>
-</ul>
-<hr>
-<h4 id="创建合并分支"><a href="#创建合并分支" class="headerlink" title="创建合并分支"></a>创建合并分支</h4><ul>
-<li><p>1.我们创建dev分支，然后切换到dev分支：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git checkout -b dev</div><div class="line">  Switched to a new branch <span class="string">'dev'</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>2.git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git branch dev</div><div class="line">$ git checkout dev</div><div class="line">  Switched to branch <span class="string">'dev'</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>3.git branch命令会列出所有分支，当前分支前面会标一个*号。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git branch</div><div class="line">  * dev</div><div class="line">    master</div></pre></td></tr></table></figure>
-</li>
-<li><p>4.改变文件之后提交,就会提交到dev分支进行提交，并且在master分支上没有任何改变</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ git add readme.txt </div><div class="line">    $ git commit -m <span class="string">"branch test"</span></div><div class="line">    [dev fec145a] branch <span class="built_in">test</span></div><div class="line">    1 file changed, 1 insertion(+)</div></pre></td></tr></table></figure>
-</li>
-<li><p>5.改变分支到master，会发现没有任何改变</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git checkout master</div><div class="line">Switched to branch <span class="string">'master'</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>6.现在，我们把dev分支的工作成果合并到master分支上：</p>
-<blockquote>
-<p>  git merge命令用于合并指定分支到当前分支。合并后，再查看readme.txt的内容，就可以看到，和dev分支的最新提交是完全一样的。</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$   git merge dev</div><div class="line">    Updating d17efd8..fec145a</div><div class="line">    Fast-forward</div><div class="line">    readme.txt |    1 +</div><div class="line">    1 file changed, 1 insertion(+)</div></pre></td></tr></table></figure>
-</li>
-<li><p>7.合并完成之后就可以删除分支</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git branch <span class="_">-d</span> dev</div><div class="line">Deleted branch dev (was fec145a).</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<hr>
-<h4 id="解决分支冲突"><a href="#解决分支冲突" class="headerlink" title="解决分支冲突"></a>解决分支冲突</h4><ul>
-<li>1.如果创建的两条分支上都有内容提交的话，合并的时候必须手动处理冲突才能进行合并，具体的冲突文件会在文件中标出</li>
-<li>2.合并分支时，如果可能，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息<blockquote>
-<p>  如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。</p>
-</blockquote>
-</li>
-<li>3.准备合并dev分支，请注意–no-ff参数，表示禁用Fast forward：<blockquote>
-<p>  $ git merge –no-ff -m “merge with no-ff” dev </p>
-</blockquote>
-</li>
-</ul>
-<hr>
-<h4 id="bug分支"><a href="#bug分支" class="headerlink" title="bug分支"></a>bug分支</h4><ul>
-<li>1.Git还提供了一个stash功能，可以把工作现场暂时存储起来，等修复完bug之后继续工作</li>
-<li>2.首先把当前为保存的文件先寄存起来，修复完bug再继续工作<blockquote>
-<p>   git stash</p>
-</blockquote>
-</li>
-<li>3.新建一条分支并跳转到这条分支<blockquote>
-<p>  git checkout -b issue-101</p>
-</blockquote>
-</li>
-<li><p>4.修改完之后执行</p>
-<blockquote>
-<p>  git add .</p>
-<p>  git commit -m “进行了修改”</p>
-</blockquote>
-</li>
-<li><p>5.回到主分支并把bug分支合并到主分支</p>
-<blockquote>
-<p>  $ git checkout master   //切换到主分支</p>
-<p>  $ git branch -d issue-101  //把bug分支合并到主分支</p>
-</blockquote>
-</li>
-<li><p>6.回到工作分支进行操作</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$   git checkout dev</div><div class="line">    Switched to branch <span class="string">'dev'</span></div><div class="line">    $ git status</div><div class="line">    <span class="comment"># On branch dev</span></div><div class="line">    nothing to commit (working directory clean)</div></pre></td></tr></table></figure>
-<p>会发现工作分支并没有任何需要操作的文件，我们需要执行命令查看我们寄存的工作文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git stash list</div><div class="line"> stash@&#123;0&#125;: WIP on dev: 6224937 add merge</div></pre></td></tr></table></figure>
-<p>我们发现我们的工作现场还在，只是git帮我们存储到了一个地方，我们恢复的时候有两种方法</p>
-<ul>
-<li>第一种方法<blockquote>
-<p>  git stash apply<br>恢复后stash文件没有被删除，需要执行<code>git stash drop</code>来删除</p>
-</blockquote>
-</li>
-<li>第二种方法<blockquote>
-<p>  git stash pop<br>恢复的同时也会把stash文件删除掉</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li>7.最后我们执行git stash list会发现看不到stash的任何内容</li>
-</ul>
-<hr>
-<ul>
-<li>pwd: 显示当前路由位置</li>
-<li>git add <file>：文件添加到仓库(git add .)</file></li>
-<li>git commit：-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录</li>
-<li>git status ：查看仓库当前的状态（是否有变动的文件)</li>
-<li>git diff:查看修改了哪些内容（只能查看未提交的内容）</li>
-<li>git log:  查看提交的操作的日志</li>
-<li>git log –pretty=oneline 美化输出信息</li>
-<li>git reset –hard HEAD^ 回退到某一个个版本</li>
-<li>git reflog 记录了每一次的命令</li>
-<li>git checkout – file (git checkout .)就可以撤销对工作区的修改</li>
-<li>git reset HEAD file可以把暂存区的修改撤销掉（unstage），重新放回工作区：</li>
-<li>查看分支：git branch</li>
-<li>创建分支：git branch <name></name></li>
-<li>切换分支：git checkout <name></name></li>
-<li>创建+切换分支：git checkout -b <name></name></li>
-<li>合并某分支到当前分支：git merge <name></name></li>
-<li>删除分支：git branch -d <name></name></li>
-</ul>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/">Git</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-server" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/01/08/server/" class="article-date">
-      <time datetime="2017-01-08T09:28:15.000Z" itemprop="datePublished">2017-01-08</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/08/server/">基于node.js的简单服务器搭建(实现简单的登录注册)</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h2 id="搭建服务器"><a href="#搭建服务器" class="headerlink" title="搭建服务器"></a>搭建服务器</h2><hr>
-<h4 id="搭建服务器运行环境"><a href="#搭建服务器运行环境" class="headerlink" title="搭建服务器运行环境"></a>搭建服务器运行环境</h4><ul>
-<li>因为讲的是nodejs搭建的服务器，所以电脑中必须安装node，我本人使用的是window系统，所以以下的方法都是基于window的系统，大家可以到这个网址找到自己电脑对应的系统直接下载安装 <a href="https://nodejs.org/en/download/" target="_blank" rel="external">下载地址</a>，不在赘述。</li>
-<li>安装node才是万里长城的第一步，仅仅是给我们创建的服务端js文件提供了一个运行的环境，接下来是安装搭建服务器所需要的模块和创建服务器需要的目录结构。</li>
-<li>node安装的时候也安装了npm模块，我们可以基于这个插件安装我们所需的模块</li>
-<li><p>初始化package.json文件,并创建我们服务器文件的目录，我创建的是server，然后在server文件夹下在命令行工具中进行安装模块（Git比window自带的命令行工具好用，最好去用Git，我在用window自带命令行工具的时候出现了很多莫名其妙的BUG）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">npm init                                        //(回车执行)会在目录下初始化一个package.json文件，包含了我们服务器所依赖的模块信息还有一些配置信息都在里面，生成的时候我们也可以去修改</div><div class="line">name: (server)                               //这是搭建服务器的名字，可以自己定义，但是name值不能有大写</div><div class="line">version: (1.0.0)                                //版本 可以自己指定</div><div class="line">description:</div><div class="line">entry point: (index.js)                         //含有服务器代码的文件</div><div class="line"><span class="built_in">test</span> <span class="built_in">command</span>:</div><div class="line">git repository:</div><div class="line">keywords:</div><div class="line">author:</div><div class="line">license: (ISC)</div><div class="line">About to write to H:\server\package.json:       //package.json文件的路径</div><div class="line"></div><div class="line">&#123;</div><div class="line"><span class="string">"name"</span>: <span class="string">"bolgexerc"</span>,</div><div class="line"><span class="string">"version"</span>: <span class="string">"1.0.0"</span>,</div><div class="line"><span class="string">"description"</span>: <span class="string">""</span>,</div><div class="line"><span class="string">"main"</span>: <span class="string">"index.js"</span>,</div><div class="line"><span class="string">"scripts"</span>: &#123;</div><div class="line">    <span class="string">"test"</span>: <span class="string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span></div><div class="line">&#125;,</div><div class="line"><span class="string">"author"</span>: <span class="string">""</span>,</div><div class="line"><span class="string">"license"</span>: <span class="string">"ISC"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>基本配置这几项就已经可以了，这时大家可以发现我们的server目录下已经有了一个package.json的文件，这个文件就是我们刚才npm init生成的文件</p>
-</li>
-<li><p>安装express模块：这个模块已经封装了创建服务器的方法，我们可以直接基于这个模块去创建服务器，不用我们再去写很多繁琐的代码，直接引入这个模块就可以</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install express --save</div></pre></td></tr></table></figure>
-</li>
-<li><p>执行上面这些简单的命令，我们已经具备了搭建服务器的条件，现在就就要创建我们的服务器代码，在服务器文件夹下创建index.js文件：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">//server/index.js</div><div class="line">   const express = require(<span class="string">'express'</span>);                 //引入模块</div><div class="line">   const app     = express();                              //执行模块的方法</div><div class="line"></div><div class="line">   app.lisetn(<span class="string">'3000'</span>,()=&gt;                              //监听3000端口</div><div class="line">   &#123;</div><div class="line">       console.log(<span class="string">'server running at 3000'</span>);          //3000端口有请求控制台输出文字</div><div class="line">   &#125;)</div></pre></td></tr></table></figure>
-<pre><code>我们可以在浏览器中输入:127.0.0.1:3000     如果命令行成功输出文字说明我们的服务器已经搭建成功
-</code></pre></li>
-</ul>
-<h4 id="配置服务器实现注册"><a href="#配置服务器实现注册" class="headerlink" title="配置服务器实现注册"></a>配置服务器实现注册</h4><ul>
-<li><p>我们的服务器是需要打开页面的，所以现在我们就给服务器配置一个可以打开的静态页面，我们可以在server文件夹下再创建一个www文件夹，文件夹名字自己定义，<br>配置的时候保持统一即可，在www文件下创建index.html文件,并写在页面中写简单的内容，方便我们观察效果</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;!--server/www/index.html--&gt;</div><div class="line">    &lt;!DOCTYPE html&gt;</div><div class="line">    &lt;html lang=<span class="string">"zh-CN"</span>&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</div><div class="line">        &lt;title&gt;登录&lt;/title&gt;</div><div class="line">    &lt;/head&gt;</div><div class="line">    &lt;body&gt;</div><div class="line">        &lt;p&gt;服务器已经打开了静态页面。。。。&lt;/p&gt;</div><div class="line">    &lt;/body&gt;</div><div class="line">    &lt;/html&gt;</div></pre></td></tr></table></figure>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">//server/index.js</div><div class="line">const express = require(<span class="string">'express'</span>);                 //引入模块</div><div class="line">const app     = express();   </div><div class="line">app.use(express.static(<span class="string">'www'</span>)) </div><div class="line">app.lisetn(<span class="string">'3000'</span>,()=&gt;                              //监听3000端口</div><div class="line">&#123;</div><div class="line">    console.log(<span class="string">'server running at 3000'</span>);          //3000端口有请求控制台输出文字</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<p>现在我们在命令行输出node index.js 然后在浏览器输入127.0.0.1:3000我们可以现服务器已经打开了我们配置的index.html文件，接下来就是我们通过一些模块实现简单的登录注册<br>代码我会在稍后的介绍中，给大家发我的阿里云和github链接，大家可以直接下载</p>
-</li>
-<li><p>页面已经显示了，现在就要实现一下注册页面的简单的样式，修改我们www/index.html文件的内容</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line"></div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta charset=<span class="string">"utf-8"</span>&gt;</div><div class="line">    &lt;meta name=<span class="string">"author"</span> content=<span class="string">""</span>&gt;</div><div class="line">    &lt;title&gt;注册页面&lt;/title&gt;</div><div class="line">    &lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"css/bootstrap.min.css"</span>&gt;</div><div class="line">    &lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"styles/all.css"</span>&gt;</div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line">    &lt;nav class=<span class="string">"navbar navbar-inverse navbar-fixed-top"</span>&gt;</div><div class="line">        &lt;div class=<span class="string">"container"</span>&gt;</div><div class="line">            &lt;div class=<span class="string">"row"</span>&gt;</div><div class="line">                &lt;div class=<span class="string">"navbar-title"</span>&gt;</div><div class="line">                    &lt;span id=<span class="string">"goBack"</span> class=<span class="string">"glyphicon glyphicon-chevron-left pull-left"</span>&gt;&lt;/span&gt; 注册</div><div class="line">                    &lt;span class=<span class="string">"glyphicon glyphicon-user pull-right"</span>&gt;&lt;/span&gt;</div><div class="line">                &lt;/div&gt;</div><div class="line">            &lt;/div&gt;</div><div class="line">        &lt;/div&gt;</div><div class="line">    &lt;/nav&gt;</div><div class="line"></div><div class="line">    &lt;div class=<span class="string">"container"</span>&gt;</div><div class="line">        &lt;form action=<span class="string">"/user/register"</span> method=<span class="string">"POST"</span>&gt;</div><div class="line">            &lt;div class=<span class="string">"form-group"</span>&gt;</div><div class="line">                &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> class=<span class="string">"form-control"</span> name=<span class="string">"petname"</span> placeholder=<span class="string">"请填写昵称"</span>&gt;</div><div class="line">            &lt;/div&gt;</div><div class="line">            &lt;div class=<span class="string">"form-group"</span>&gt;</div><div class="line">                &lt;input <span class="built_in">type</span>=<span class="string">"password"</span> class=<span class="string">"form-control"</span> name=<span class="string">"password"</span> placeholder=<span class="string">"请填写密码"</span>&gt;</div><div class="line">            &lt;/div&gt;</div><div class="line">            &lt;div class=<span class="string">"form-group"</span>&gt;</div><div class="line">                &lt;input <span class="built_in">type</span>=<span class="string">"password"</span> class=<span class="string">"form-control"</span> name=<span class="string">"password"</span> placeholder=<span class="string">"请再次填写密码"</span>&gt;</div><div class="line">            &lt;/div&gt;</div><div class="line">            &lt;div class=<span class="string">"checkbox"</span>&gt;</div><div class="line">                &lt;label <span class="keyword">for</span>=<span class="string">""</span>&gt;</div><div class="line">                    &lt;input <span class="built_in">type</span>=<span class="string">"radio"</span> value=<span class="string">"true"</span> name = <span class="string">"ismale"</span> id=<span class="string">"male"</span> checked&gt;</div><div class="line">                    先生</div><div class="line">                &lt;/label&gt;</div><div class="line">            &lt;/div&gt;</div><div class="line">            &lt;div class=<span class="string">"checkbox"</span>&gt;</div><div class="line">                &lt;label <span class="keyword">for</span>=<span class="string">""</span>&gt;</div><div class="line">                    &lt;input <span class="built_in">type</span>=<span class="string">"radio"</span> value=<span class="string">"false"</span> name = <span class="string">"ismale"</span> id=<span class="string">"famale"</span>&gt;</div><div class="line">                &lt;/label&gt; 女士</div><div class="line">            &lt;/div&gt;</div><div class="line">            &lt;div class=<span class="string">"form-grop"</span>&gt;</div><div class="line">                &lt;input <span class="built_in">type</span>=<span class="string">"email"</span> class=<span class="string">"form-control"</span> name=<span class="string">"email"</span> placeholder=<span class="string">"请输入电子邮箱"</span>&gt;</div><div class="line">            &lt;/div&gt;</div><div class="line">            &lt;div class=<span class="string">"form-group"</span>&gt;</div><div class="line">                &lt;select name=<span class="string">"course"</span> id=<span class="string">""</span> class=<span class="string">"form-control"</span>&gt;</div><div class="line">                    &lt;option value=<span class="string">"HTML5"</span>&gt;HTML5&lt;/option&gt;</div><div class="line">                    &lt;option value=<span class="string">"JavaScript"</span>&gt;JavaScript&lt;/option&gt;</div><div class="line">                    &lt;option value=<span class="string">"PHP"</span>&gt;PHP&lt;/option&gt;</div><div class="line">                &lt;/select&gt;</div><div class="line">            &lt;/div&gt;</div><div class="line">            &lt;input <span class="built_in">type</span>=<span class="string">"submit"</span> class=<span class="string">"btn btn-success form-control"</span> value=<span class="string">"注册"</span>&gt;</div><div class="line">        &lt;/form&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;script src=<span class="string">"js/jquery.min.js"</span>&gt;&lt;/script&gt;</div><div class="line">    &lt;script src=<span class="string">"js/bootstrap.min.js"</span>&gt;&lt;/script&gt;</div><div class="line">    &lt;script src=<span class="string">"scripts/register.js"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;/body&gt;</div><div class="line"></div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
-<p>为了方便页面的内容都是用的是bootstrap插件，只是为了实现效果，至于bootstrap怎么用的，大家可以参考官网</p>
-<h5 id="待续。。。。。。。"><a href="#待续。。。。。。。" class="headerlink" title="待续。。。。。。。"></a>待续。。。。。。。</h5></li>
-</ul>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node-js/">node.js</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-js" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/01/01/js/" class="article-date">
-      <time datetime="2017-01-01T11:04:33.670Z" itemprop="datePublished">2017-01-01</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Hello-World-0" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/01/01/Hello-World-0/" class="article-date">
-      <time datetime="2017-01-01T09:28:15.000Z" itemprop="datePublished">2017-01-01</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/01/Hello-World-0/">jQuery总结</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h2 id="jQuery总结"><a href="#jQuery总结" class="headerlink" title="jQuery总结"></a>jQuery总结</h2><h3 id="学习过程中总结了一份简单的jQuery用法"><a href="#学习过程中总结了一份简单的jQuery用法" class="headerlink" title="学习过程中总结了一份简单的jQuery用法"></a>学习过程中总结了一份简单的jQuery用法</h3><p><img src="http://weldon.oss-cn-shanghai.aliyuncs.com/IMG/overview.png" alt=""></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jQuery/">jQuery</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/01/01/hello-world/" class="article-date">
-      <time datetime="2017-01-01T09:26:55.356Z" itemprop="datePublished">2017-01-01</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/01/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-  
-</div>
-      <footer id="footer">
-    <div class="outer">
-        <div id="footer-info">
-            <div class="footer-left">
-                <i class="fa fa-copyright"></i> 
-                2016-2017 前端小武
-            </div>
-            <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
-            </div>
+            <em>·</em>2017-01-10
         </div>
-        
-            <div class="visit">
-                
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
-                        </span>
-                    </span>
-                
-                
-                    <span>| </span>
-                
-                
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
-                        </span>
-                    </span>
-                
-            </div>
-        
+        <a class="post-title" href="/2017/01/10/git版本管理/" target="_blank" title="git版本管理">git版本管理</a>
+        <div class="post-meta">
+            <a href="/2017/01/10/git版本管理/#ds-thread" target="_blank">评论：?</a>
+            <em>·</em>
+            <a href="/2017/01/10/git版本管理/" target="_blank">阅读：?</a><em>·</em>
+            <span>喜欢：?</span>
+        </div>
     </div>
-</footer>
+    <div class="post-desc">
+        git版本管理
+    </div>
+</article>
+
+
+
+    
+    
+<article class="post">
+    
+    <div class="post-header">
+        <div class="post-meta">
+            <a href="https://www.tangkunyin.com" target="_blank">
+                <strong>undefined</strong>
+            </a>
+            <em>·</em>2017-01-08
+        </div>
+        <a class="post-title" href="/2017/01/08/server/" target="_blank" title="基于node.js的简单服务器搭建(实现简单的登录注册)">基于node.js的简单服务器搭建(实现简单的登录注册)</a>
+        <div class="post-meta">
+            <a href="/2017/01/08/server/#ds-thread" target="_blank">评论：?</a>
+            <em>·</em>
+            <a href="/2017/01/08/server/" target="_blank">阅读：?</a><em>·</em>
+            <span>喜欢：?</span>
+        </div>
+    </div>
+    <div class="post-desc">
+        server
+    </div>
+</article>
+
+
+
+    
+    
+<article class="post">
+    
+    <div class="post-header">
+        <div class="post-meta">
+            <a href="https://www.tangkunyin.com" target="_blank">
+                <strong>undefined</strong>
+            </a>
+            <em>·</em>2017-01-01
+        </div>
+        <a class="post-title" href="/2017/01/01/js/" target="_blank" title=""></a>
+        <div class="post-meta">
+            <a href="/2017/01/01/js/#ds-thread" target="_blank">评论：?</a>
+            <em>·</em>
+            <a href="/2017/01/01/js/" target="_blank">阅读：?</a><em>·</em>
+            <span>喜欢：?</span>
+        </div>
+    </div>
+    <div class="post-desc">
+        js
+    </div>
+</article>
+
+
+
+    
+    
+<article class="post">
+    
+    <div class="post-header">
+        <div class="post-meta">
+            <a href="https://www.tangkunyin.com" target="_blank">
+                <strong>undefined</strong>
+            </a>
+            <em>·</em>2017-01-01
+        </div>
+        <a class="post-title" href="/2017/01/01/Hello-World-0/" target="_blank" title="jQuery总结">jQuery总结</a>
+        <div class="post-meta">
+            <a href="/2017/01/01/Hello-World-0/#ds-thread" target="_blank">评论：?</a>
+            <em>·</em>
+            <a href="/2017/01/01/Hello-World-0/" target="_blank">阅读：?</a><em>·</em>
+            <span>喜欢：?</span>
+        </div>
+    </div>
+    <div class="post-desc">
+        Hello-World-0
+    </div>
+</article>
+
+
+
+    
+    
+<article class="post">
+    
+    <div class="post-header">
+        <div class="post-meta">
+            <a href="https://www.tangkunyin.com" target="_blank">
+                <strong>undefined</strong>
+            </a>
+            <em>·</em>2017-01-01
+        </div>
+        <a class="post-title" href="/2017/01/01/hello-world/" target="_blank" title="Hello World">Hello World</a>
+        <div class="post-meta">
+            <a href="/2017/01/01/hello-world/#ds-thread" target="_blank">评论：?</a>
+            <em>·</em>
+            <a href="/2017/01/01/hello-world/" target="_blank">阅读：?</a><em>·</em>
+            <span>喜欢：?</span>
+        </div>
+    </div>
+    <div class="post-desc">
+        hello-world
+    </div>
+</article>
+
+
+
+    
+    
+
+</div>
+
+
+
+        </div><!-- end #main-->
+    </div><!-- end #body -->
+    <footer class="footer">
+    <div class="footer-inner">
+        <p>
+            <a href="/about"  title="关于本站">关于</a>&nbsp;
+            &nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/archives" title="联系作者" >归档</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/tags" title="帮助中心">标签</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/feedback" title="技术周边">反馈</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/friendlinks" title="友情链接">友链</a>
+        </p>
+        <p>
+            本站点采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>，已建立<a href="/timeline" id="siteBuildingTime"></a>天<br/>
+            ©2017 基于<a href="http://hexo.io" target="_blank">Hexo</a>搭建
+            ，主题<a href="https://github.com/tangkunyin/hexo-theme-simple" target="_blank">Simple</a>
+            ，感谢<a href="https://coding.net/register?key=bcace447-fa41-4579-9783-86fdf0f723e2" target="_blank">Coding</a>提供免费优质的强力驱动
+        </p>
     </div>
     
-<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+<span style="display: none">
+<script src="https://s4.cnzz.com/z_stat.php?id=1261190932&web_id=1261190932" language="JavaScript"></script>
+</span>
 
-    <script>
-        $(document).ready(function() {
-            var iPad = window.navigator.userAgent.indexOf('iPad');
-            if (iPad > -1 || $(".left-col").css("display") === "none") {
-                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
-                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
-                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
-            }
-            else {
-                var backgroundnum = 5;
-                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
-            }
-        })
-    </script>
-
-
-
-
-
-<div class="scroll" id="scroll">
-    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
+</footer>
+</div>
+<div class="fixed-btn">
+    <a class="btn-gotop" href="javascript:"> <i class="fa fa-angle-up"></i></a>
 </div>
 <script>
-    // Open in New Window
-    
-        var oOpenInNew = {
-            
-            
-            
-            
-            
-            
-             archives: ".archive-article-title", 
-             miniArchives: "a.post-list-link", 
-            
-             friends: "#js-friends a", 
-             socail: ".social a" 
-        }
-        for (var x in oOpenInNew) {
-            $(oOpenInNew[x]).attr("target", "_blank");
-        }
-    
+    $(function () {
+        SimpleCore.init({
+            url: 'http://yoursite.com',
+            buildingTime: '12/12/2014',
+            usePjax: true,
+            current: $('.post-tags').length > 0 ? 'post' : 'archive',
+            prefix: '_http://yoursite.com',
+            donateImg: '/images/weixin_donate.png'
+        });
+    });
 </script>
-
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-  </div>
 </body>
 </html>
